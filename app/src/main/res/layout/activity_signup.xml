@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.example.android.androidtutorial2.signup">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="Enter the following information to sign up"
+        android:layout_marginLeft="30dp"
+        android:textSize="16dp"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/colorAccent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:id="@+id/signupname"
+        android:layout_marginBottom="30dp"
+        android:layout_marginHorizontal="30dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/signupemail"
+        android:inputType="textWebEmailAddress"
+        android:layout_marginBottom="30dp"
+        android:hint=" @Email"
+        android:layout_marginHorizontal="30dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_height="40dp"
+        android:id="@+id/signuppassword"
+        android:layout_marginBottom="30dp"
+        android:layout_marginHorizontal="30dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Sign Up"
+        android:onClick="submitSignUp"
+        android:textColor="@color/colorAccent"
+        android:layout_height="40dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="already have an account,"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:autoLink="web"
+            android:onClick="goToLogIn"
+            android:layout_height="wrap_content"
+            android:text="Sign In"/>
+    </LinearLayout>
+
+</LinearLayout>
